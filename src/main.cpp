@@ -8,7 +8,7 @@
 
 int main(int argc, char** argv)
 {
-    int num = argc == 2 ? std::stoi(argv[1]): 40;
+    int num = argc == 2 ? std::stoi(argv[1]): 200;
 
     MainWindow::setSize(640, 480);
     MainWindow::setTitle("Ball Collision test");
