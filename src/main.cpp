@@ -17,7 +17,7 @@ int main(int argc, char** argv)
     // Create balls
     std::vector<std::unique_ptr<Ball>> vec;
     for (int i=0; i<num; ++i) {
-        vec.emplace_back(new Ball (std::rand() % win.getWidth(), std::rand() % win.getHeight(), 3, 3 ));
+        vec.push_back(std::make_unique<Ball>(std::rand() % win.getWidth(), std::rand() % win.getHeight(), 3, 3 ));
     }
 
     bool quit = false;
